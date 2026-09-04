@@ -1,0 +1,18 @@
+{
+  "name": "matisse-art",
+  "owner": {
+    "name": "Philz Evans",
+    "email": "philykimi@gmail.com"
+  },
+  "metadata": {
+    "description": "Original Matisse-inspired home decor art skill",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "matisse-art",
+      "source": ".",
+      "description": "Original Matisse-inspired home decor art: cut-outs, Fauvist painting, and brush-ink contour drawing."
+    }
+  ]
+}
