@@ -53,6 +53,20 @@ You can also import this Git repository from **Dashboard → Plugins → Add Mar
 
 Prints are original compositions. Files in `skills/matisse-art/references/` are style anchors only — borrow silhouette language, paper grain, and poster structure; do not reproduce famous works or exhibition copy.
 
+## Samples
+
+Original prints generated with this skill. Full-bleed artwork-only unless noted.
+
+| File | Language | Subject |
+|------|----------|---------|
+| [samples/cutout-leaf-and-sun.png](samples/cutout-leaf-and-sun.png) | Cut-outs | Sage leaf and yellow sun |
+| [samples/cutout-banana-leaf.png](samples/cutout-banana-leaf.png) | Cut-outs | Banana leaf |
+| [samples/cutout-blue-doves.png](samples/cutout-blue-doves.png) | Cut-outs | Paired cobalt birds |
+| [samples/fauvist-garden-riviera.png](samples/fauvist-garden-riviera.png) | Fauvist | Garden path to the sea |
+| [samples/fauvist-open-window.png](samples/fauvist-open-window.png) | Fauvist | Open window, Mediterranean |
+| [samples/contour-portrait.png](samples/contour-portrait.png) | Contour | Brush-ink portrait |
+| [samples/poster-coral-leaf.png](samples/poster-coral-leaf.png) | Cut-outs + poster | Exhibition coral frond |
+
 ## Plugin layout
 
 ```
