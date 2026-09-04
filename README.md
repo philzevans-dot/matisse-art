@@ -77,5 +77,6 @@ skills/matisse-art/
 ├── SKILL.md
 ├── examples.md
 └── references/
+samples/                            # Generated example prints
 assets/logo.svg
 ```
