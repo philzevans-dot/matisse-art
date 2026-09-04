@@ -1,6 +1,6 @@
 # Matisse Art
 
-A Cursor plugin that teaches Agent to produce original Matisse-inspired fine art for home decor: wall prints, gallery sets, and exhibition posters.
+A plugin that teaches Agent to produce original Matisse-inspired fine art for home decor: wall prints, gallery sets, and exhibition posters.
 
 Three visual languages:
 
