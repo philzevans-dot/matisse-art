@@ -24,6 +24,8 @@ Or invoke `/matisse-art` in Agent chat.
 
 ## Install
 
+Public repo: [github.com/philzevans-dot/matisse-art](https://github.com/philzevans-dot/matisse-art)
+
 **This repo (project skill)** — clone it and open it in Cursor. The skill loads from `.cursor/skills/matisse-art`.
 
 **Local plugin (this machine)** — copy or symlink the repo to `~/.cursor/plugins/local/matisse-art`, then reload the window. Open **Customize** and confirm the skill is listed.
@@ -36,7 +38,7 @@ Or invoke `/matisse-art` in Agent chat.
 
 You can also import this Git repository from **Dashboard → Plugins → Add Marketplace**.
 
-**Public Cursor Marketplace** — push this project to a public GitHub repository, then submit the repo URL at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish). Cursor reviews each listing.
+**Public Cursor Marketplace** — submit [github.com/philzevans-dot/matisse-art](https://github.com/philzevans-dot/matisse-art) at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish). Cursor reviews each listing.
 
 ## Defaults
 
