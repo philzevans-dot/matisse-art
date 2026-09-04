@@ -1,8 +1,14 @@
 # Matisse Art Skill
 
-A Cursor Agent Skill that produces original Matisse-inspired fine art for home decor: wall art, framed prints, canvas pieces, and coordinated gallery sets.
+A Cursor Agent Skill that produces original Matisse-inspired fine art for home decor: wall art, framed prints, canvas pieces, coordinated gallery sets, and exhibition posters.
 
-The skill works in two visual languages — late **papiers découpés** (flat gouache-paper cut-outs) and early **Fauvist** painting — and defaults to full-bleed, artwork-only prints with no poster text or white border.
+Three visual languages:
+
+- Late **papiers découpés** (flat gouache-paper cut-outs) — default for graphic decor
+- Early **Fauvist** painting — scenes, interiors, landscapes
+- **Brush-ink contour** drawing — monochrome portraits and figures
+
+Default output is full-bleed, artwork-only (no poster text or mat). Exhibition-poster layout — cream mat, serif header, inner color panel, gallery footer — is used when you ask for a poster or museum look.
 
 ## Use it
 
@@ -11,21 +17,23 @@ The skill works in two visual languages — late **papiers découpés** (flat go
    - “A cobalt bird cut-out for the hallway”
    - “Three botanical prints in a Matisse paper-cut style”
    - “A Fauvist open-window painting, pink floor, Mediterranean view”
-   - “Flat bold organic shapes, cream ground, gallery-wall set of four”
+   - “A brush-ink line portrait of a woman looking upward”
+   - “An exhibition poster, papiers découpés, one coral leaf on blue”
 
-The agent chooses cut-outs vs painterly, builds the prompt, and generates via Cursor `GenerateImage`.
+The agent chooses language and output mode, builds the prompt, and generates via Cursor `GenerateImage`.
 
 ## Defaults
 
 | Choice | Default |
 |--------|---------|
-| Language | Cut-outs for graphic prints; painterly for scenes |
+| Language | Cut-outs for graphic prints; painterly for scenes; contour for portraits |
 | Output | Artwork-only, full-bleed, no text/signature/border |
+| Poster | Cream mat + serif type, only when asked |
 | Aspect | Portrait `3:4` wall art |
-| Palette | 3–5 bold flat colors on warm cream |
-| Sets | Shared palette, ground, texture; motif varies per print |
+| Palette | 2–5 bold flat colors on warm cream |
+| Sets | Shared palette, ground, texture, and margin treatment |
 
-Poster typography and white mats are added only when you explicitly ask for an exhibition/poster look.
+Prints are original compositions. Files in `references/` are style anchors only — borrow silhouette language, paper grain, and poster structure; do not reproduce famous works or exhibition copy.
 
 ## Skill files
 
@@ -35,5 +43,3 @@ Poster typography and white mats are added only when you explicitly ask for an e
 ├── examples.md       # Assembled prompt examples
 └── references/       # Style anchors (borrow language, never copy)
 ```
-
-Prints are original compositions. Famous Matisse works in `references/` are style anchors only — cobalt silhouette, paper grain, Fauvist color — not templates to reproduce.
