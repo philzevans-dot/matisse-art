@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+- Replace MIT with a proprietary commercial license stub (`LICENSE`, `COMMERCIAL-LICENSE.md`).
+
 ## 1.0.0
 
 - Package `matisse-art` as a Cursor / Agent Plugin for marketplace and team publish.

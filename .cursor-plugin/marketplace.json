@@ -14,7 +14,8 @@
       "source": ".",
       "description": "Original Matisse-inspired home decor art: cut-outs, Fauvist painting, and brush-ink contour drawing.",
       "homepage": "https://github.com/philzevans-dot/matisse-art",
-      "repository": "https://github.com/philzevans-dot/matisse-art"
+      "repository": "https://github.com/philzevans-dot/matisse-art",
+      "license": "SEE LICENSE IN COMMERCIAL-LICENSE.md"
     }
   ]
 }

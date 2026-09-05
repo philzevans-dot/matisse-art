@@ -79,4 +79,16 @@ skills/matisse-art/
 └── references/
 samples/                            # Generated example prints
 assets/logo.svg
+LICENSE                             # Proprietary notice
+COMMERCIAL-LICENSE.md               # Paid-use terms (stub)
 ```
+
+## License
+
+Proprietary. **All rights reserved.** This is not MIT or any other open-source license.
+
+- Viewing the repo does not grant a right to use the skill.
+- Paid terms: [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md)
+- Sample pictures are display-only unless a paid license says otherwise.
+- Contact: philykimi@gmail.com
+
