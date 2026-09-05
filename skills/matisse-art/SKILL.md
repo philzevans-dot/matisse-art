@@ -97,29 +97,26 @@ When poster mode is on, compose a vertical museum print — not a busy graphic-d
 
 Confirm the essentials only if they change the deliverable: subject/motif, language (infer if obvious), output mode (artwork-only vs poster), size/aspect, and whether it's a single print or a coordinated set. Don't over-ask; motif and mood can be inferred and refined.
 
-**Single print:** one `GenerateImage` call. Default aspect ratio for wall art is portrait (`3:4`) unless the user specifies square (`1:1`) or landscape (`4:3` or `16:9`). Cursor does not support `2:3`; use `3:4` as the portrait default.
+**Single print:** one image-generation call. Default aspect ratio for wall art is portrait (`3:4`) unless the user specifies square (`1:1`) or landscape (`4:3` or `16:9`). If the host has no `2:3`, use `3:4`.
 
 **Gallery set (2–6 prints):** this is ONE coordinated series, not independent images. The set must share a visual anchor — same palette family, same motif language, same ground color and texture, same margin treatment (all artwork-only or all posters). Generate them to hang together: consistent style across the set, with each print varying only the motif/composition. When consistency matters, establish the look with one piece first (or pass a shared reference), then produce the rest against it so they don't each "paint themselves differently."
 
 Build the prompt from the language chosen: name the style, the motif, the treatment, the specific palette, cream ground, hand-made paper/brush texture, and either full-bleed artwork-only or the exhibition-poster layout.
 
-**Reference images:** pass local files via `reference_image_paths` to anchor style/color/texture — treat them as style inspiration, never copying a specific composition or famous work. Borrow the language; invent the forms. Prefer 1–3 anchors that match **both** language and output mode (poster refs for posters, full-bleed refs for artwork-only).
+**Reference images:** pass local files from this skill's `references/` directory to anchor style/color/texture — treat them as style inspiration, never copying a specific composition or famous work. Borrow the language; invent the forms. Prefer 1–3 anchors that match **both** language and output mode (poster refs for posters, full-bleed refs for artwork-only).
 
-### Cursor GenerateImage
-
-Use the Cursor `GenerateImage` tool (not `generate_media`).
+### Image generation by host
 
 1. Choose language A, B, or C (hybrid only if asked).
 2. Choose output mode: artwork-only (default) or exhibition poster.
 3. Assemble the prompt from [Prompt building blocks](#prompt-building-blocks); keep the user's subject wording verbatim.
 4. Pick 1–3 matching local style anchors. Do not pass all of them.
-5. Call `GenerateImage` once per print:
-   - `description`: the assembled prompt
-   - `aspect_ratio`: `3:4` (default wall art), `1:1` (square), `4:3` or `16:9` (landscape)
-   - `filename`: `matisse-{motif-slug}.png`
-   - `reference_image_paths`: local files from this skill's `references/` directory (and, for later prints in a set, the first generated image)
-6. Do not re-embed generated images as Markdown; the client displays them automatically. Include one `<img>` tag if the tool result provides an artifact path.
-7. For a set: generate print 1 first, then pass that file as a shared reference for prints 2–N so palette, ground, and texture stay locked.
+5. Generate once per print. Portrait default `3:4`; square `1:1`; landscape `4:3` or `16:9`. Filename: `matisse-{motif-slug}.png`.
+6. For a set: generate print 1 first, then pass that file as a shared reference for prints 2–N so palette, ground, and texture stay locked.
+
+**Cursor:** use `GenerateImage` (not `generate_media`). Put the prompt in `description`, aspect in `aspect_ratio`, anchors in `reference_image_paths`. Do not re-embed generated images as Markdown unless the tool result gives an artifact path.
+
+**Claude (Claude.ai, Cowork, Claude Code):** use the host's image-generation tool if one is available, with the same assembled prompt and local `references/` files when the tool accepts attachments. If the host cannot generate images, output the assembled prompt and the chosen reference file names so the user can run them in an image model — do not invent a fake image.
 
 ## Prompt building blocks
 

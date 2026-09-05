@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0
+
+- Add Claude Code plugin + marketplace manifests (`.claude-plugin/`) and a `/matisse-art` command.
+- Skill image generation works on Cursor or Claude hosts.
+
 ## 1.1.0
 
 - Replace MIT with a proprietary commercial license stub (`LICENSE`, `COMMERCIAL-LICENSE.md`).

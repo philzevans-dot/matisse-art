@@ -13,9 +13,26 @@
       "name": "matisse-art",
       "source": ".",
       "description": "Original Matisse-inspired home decor art: cut-outs, Fauvist painting, and brush-ink contour drawing.",
+      "version": "1.2.0",
+      "author": {
+        "name": "Philz Evans",
+        "email": "philykimi@gmail.com"
+      },
       "homepage": "https://github.com/philzevans-dot/matisse-art",
       "repository": "https://github.com/philzevans-dot/matisse-art",
-      "license": "SEE LICENSE IN COMMERCIAL-LICENSE.md"
+      "license": "SEE LICENSE IN COMMERCIAL-LICENSE.md",
+      "keywords": [
+        "matisse",
+        "art",
+        "wall-art",
+        "fauvist",
+        "cut-outs",
+        "papiers-decoupes",
+        "exhibition-poster",
+        "home-decor"
+      ],
+      "category": "lifestyle",
+      "tags": ["matisse", "fine-art", "wall-art", "cut-outs"]
     }
   ]
 }

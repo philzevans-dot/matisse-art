@@ -40,6 +40,21 @@ You can also import this Git repository from **Dashboard → Plugins → Add Mar
 
 **Public Cursor Marketplace** — submit [github.com/philzevans-dot/matisse-art](https://github.com/philzevans-dot/matisse-art) at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish). Cursor reviews each listing.
 
+## Claude
+
+This repo is also a Claude Code plugin marketplace.
+
+In Claude Code:
+
+```text
+/plugin marketplace add philzevans-dot/matisse-art
+/plugin install matisse-art@matisse-art
+```
+
+Then ask for Matisse-style wall art, or run `/matisse-art:matisse-art`.
+
+**Official Claude plugin directory** (Cowork + Claude Code catalog): submit the public GitHub URL at [claude.ai/admin-settings/directory/submissions/plugins/new](https://claude.ai/admin-settings/directory/submissions/plugins/new) or [platform.claude.com/plugins/submit](https://platform.claude.com/plugins/submit). Anthropic requires a **public** repo and does **not** accept closed-source plugins. This repo is public and source-visible, but the license is proprietary — directory review may still reject it. The self-hosted marketplace commands above work regardless.
+
 ## Defaults
 
 | Choice | Default |
@@ -71,8 +86,11 @@ Original prints generated with this skill. Full-bleed artwork-only unless noted.
 
 ```
 plugin.json                         # Agent Plugins manifest
+.claude-plugin/plugin.json          # Claude Code plugin
+.claude-plugin/marketplace.json     # Claude Code marketplace (`/plugin marketplace add`)
 .cursor-plugin/plugin.json          # Cursor Plugin manifest
-.cursor-plugin/marketplace.json     # Team marketplace import
+.cursor-plugin/marketplace.json     # Cursor team marketplace import
+commands/matisse-art.md             # Claude / Cursor slash command
 skills/matisse-art/
 ├── SKILL.md
 ├── examples.md
